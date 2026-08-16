@@ -1,3 +1,9 @@
+/*
+
+A set is a JavaScript data structure that stores unique values
+
+*/
+
 const arr = ["apple", "banana", "mango", "apple"];
 
 // brute force
@@ -10,7 +16,6 @@ const removeDuplicateArray = (arr) => {
   });
   return newArray;
 };
-
 
 // set data structure
 const set = new Set(arr);
