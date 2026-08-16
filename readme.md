@@ -50,7 +50,7 @@ The journey covers:
 
 ### Modules
 
-* [ ] Mindset Over Syntax
+* [x] Mindset Over Syntax
 * [ ] JavaScript Data Transformation & Aggregation
 * [ ] Data Structures That Actually Matter
 * [ ] Algorithms in Action
