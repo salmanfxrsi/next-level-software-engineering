@@ -1,0 +1,198 @@
+const orders = [
+  {
+    orderId: "ORD-1001",
+    customer: { id: 1, name: "Arafat", city: "Dhaka" },
+    product: { id: 101, name: "MacBook Air M3", category: "Laptop" },
+    quantity: 1,
+    price: 145000,
+    status: "delivered",
+    payment: "card",
+  },
+  {
+    orderId: "ORD-1002",
+    customer: { id: 2, name: "Nusrat", city: "Chittagong" },
+    product: { id: 102, name: "iPhone 15", category: "Phone" },
+    quantity: 2,
+    price: 95000,
+    status: "delivered",
+    payment: "bkash",
+  },
+  {
+    orderId: "ORD-1003",
+    customer: { id: 3, name: "Sakib", city: "Dhaka" },
+    product: { id: 103, name: "Sony WH-1000XM5", category: "Headphone" },
+    quantity: 1,
+    price: 32000,
+    status: "shipped",
+    payment: "card",
+  },
+  {
+    orderId: "ORD-1004",
+    customer: { id: 4, name: "Mim", city: "Sylhet" },
+    product: { id: 104, name: "iPad Air", category: "Tablet" },
+    quantity: 1,
+    price: 72000,
+    status: "delivered",
+    payment: "nagad",
+  },
+  {
+    orderId: "ORD-1005",
+    customer: { id: 5, name: "Tanvir", city: "Rajshahi" },
+    product: { id: 105, name: "Logitech MX Master 3S", category: "Mouse" },
+    quantity: 2,
+    price: 9500,
+    status: "cancelled",
+    payment: "card",
+  },
+  {
+    orderId: "ORD-1006",
+    customer: { id: 1, name: "Arafat", city: "Dhaka" },
+    product: { id: 106, name: "Keychron K2", category: "Keyboard" },
+    quantity: 1,
+    price: 12500,
+    status: "delivered",
+    payment: "bkash",
+  },
+  {
+    orderId: "ORD-1007",
+    customer: { id: 6, name: "Fahim", city: "Khulna" },
+    product: { id: 102, name: "iPhone 15", category: "Phone" },
+    quantity: 1,
+    price: 95000,
+    status: "delivered",
+    payment: "card",
+  },
+  {
+    orderId: "ORD-1008",
+    customer: { id: 7, name: "Rafi", city: "Dhaka" },
+    product: { id: 107, name: "AirPods Pro 2", category: "Earbuds" },
+    quantity: 2,
+    price: 28000,
+    status: "shipped",
+    payment: "nagad",
+  },
+  {
+    orderId: "ORD-1009",
+    customer: { id: 8, name: "Mehedi", city: "Barishal" },
+    product: { id: 108, name: "Dell UltraSharp 27", category: "Monitor" },
+    quantity: 1,
+    price: 48000,
+    status: "delivered",
+    payment: "card",
+  },
+  {
+    orderId: "ORD-1010",
+    customer: { id: 9, name: "Siam", city: "Dhaka" },
+    product: { id: 109, name: "RTX 4060", category: "GPU" },
+    quantity: 1,
+    price: 42000,
+    status: "processing",
+    payment: "bkash",
+  },
+  {
+    orderId: "ORD-1011",
+    customer: { id: 10, name: "Nabil", city: "Chittagong" },
+    product: { id: 110, name: "Samsung Galaxy S24", category: "Phone" },
+    quantity: 1,
+    price: 89000,
+    status: "delivered",
+    payment: "card",
+  },
+  {
+    orderId: "ORD-1012",
+    customer: { id: 3, name: "Sakib", city: "Dhaka" },
+    product: { id: 101, name: "MacBook Air M3", category: "Laptop" },
+    quantity: 1,
+    price: 145000,
+    status: "delivered",
+    payment: "card",
+  },
+  {
+    orderId: "ORD-1013",
+    customer: { id: 11, name: "Jannat", city: "Sylhet" },
+    product: { id: 111, name: "Kindle Paperwhite", category: "E-reader" },
+    quantity: 1,
+    price: 18500,
+    status: "shipped",
+    payment: "nagad",
+  },
+  {
+    orderId: "ORD-1014",
+    customer: { id: 12, name: "Imran", city: "Dhaka" },
+    product: { id: 103, name: "Sony WH-1000XM5", category: "Headphone" },
+    quantity: 1,
+    price: 32000,
+    status: "delivered",
+    payment: "bkash",
+  },
+  {
+    orderId: "ORD-1015",
+    customer: { id: 13, name: "Rahat", city: "Rajshahi" },
+    product: { id: 112, name: "Apple Watch Series 9", category: "Smartwatch" },
+    quantity: 1,
+    price: 52000,
+    status: "cancelled",
+    payment: "card",
+  },
+  {
+    orderId: "ORD-1016",
+    customer: { id: 5, name: "Tanvir", city: "Rajshahi" },
+    product: { id: 108, name: "Dell UltraSharp 27", category: "Monitor" },
+    quantity: 2,
+    price: 48000,
+    status: "delivered",
+    payment: "bkash",
+  },
+  {
+    orderId: "ORD-1017",
+    customer: { id: 14, name: "Shuvo", city: "Khulna" },
+    product: { id: 104, name: "iPad Air", category: "Tablet" },
+    quantity: 1,
+    price: 72000,
+    status: "processing",
+    payment: "nagad",
+  },
+  {
+    orderId: "ORD-1018",
+    customer: { id: 7, name: "Rafi", city: "Dhaka" },
+    product: { id: 106, name: "Keychron K2", category: "Keyboard" },
+    quantity: 1,
+    price: 12500,
+    status: "delivered",
+    payment: "card",
+  },
+  {
+    orderId: "ORD-1019",
+    customer: { id: 15, name: "Anika", city: "Chittagong" },
+    product: { id: 107, name: "AirPods Pro 2", category: "Earbuds" },
+    quantity: 1,
+    price: 28000,
+    status: "delivered",
+    payment: "bkash",
+  },
+  {
+    orderId: "ORD-1020",
+    customer: { id: 16, name: "Hasan", city: "Dhaka" },
+    product: { id: 109, name: "RTX 4060", category: "GPU" },
+    quantity: 1,
+    price: 42000,
+    status: "shipped",
+    payment: "card",
+  },
+];
+
+//? Output => find out 2 top order pay with card and highest price
+
+//* Process
+//* Filter => payment === 'card'
+//* sort => by price descending
+//* slice => first 2 elements
+//* map => {orderId}
+
+const top2CardOrders = orders
+  .filter((order) => order.payment === "card")
+  .sort((a, b) => b.price - a.price)
+  .slice(0, 2)
+  .map((order) => order.orderId);
+
+console.log(top2CardOrders);
